@@ -1,0 +1,9 @@
+doctype html
+html
+    head
+        title= title
+    body
+        h1 Мои покупки
+        ul
+            each purchase in purchases
+                li= purchase.painting + ' - ' + purchase.price + ' грн'

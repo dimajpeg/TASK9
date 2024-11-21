@@ -1,0 +1,11 @@
+// views/layouts/main.pug
+doctype html
+html
+    head
+        title #{title}
+        link(rel="stylesheet", href="/css/shared.css")
+        link(rel="stylesheet", href="/css/participant.css")  // Добавляем participant.css для аукциона
+    body
+        include ../shared/header
+        block content
+        include ../shared/footer

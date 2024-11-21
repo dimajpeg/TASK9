@@ -1,0 +1,23 @@
+.paintings {
+    display: flex;
+    justify-content: center;  /* Центрирование по горизонтали */
+    gap: 20px;  /* Отступы между картинами */
+    flex-wrap: wrap;  /* Это позволит картинкам переходить на новую строку, если они не помещаются в одну */
+    padding: 20px;
+}
+
+.painting {
+    width: 200px;  /* Устанавливаем ширину каждой картины */
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.painting img {
+    width: 100%;  /* Изображение заполняет всю ширину блока */
+    height: auto;  /* Сохраняем пропорции изображения */
+    border-radius: 5px;
+}

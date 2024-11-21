@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аукцион</title>
+    <style>
+        .input-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .input-row label {
+            margin: 0;
+        }
+        .bid-info {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .bid-entry {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sold-image {
+            position: relative;
+        }
+        .sold-image img {
+            width: 140px;
+            height: 100px;
+        }
+        .sold-image .sold-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 1.5rem;
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif;">
+
+<header style="text-align: center; padding: 20px;">
+    <h1 style="font-size: 3rem; margin-bottom: 10px;">Аукцион</h1>
+    <h2 style="font-size: 2rem; color: #555;">Добро пожаловать на аукцион</h2>
+</header>
+
+<main>
+    <section style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
+        <!-- Лот 1 -->
+        <article class="auction-item" style="flex: 1 1 calc(33.33% - 40px); max-width: 300px; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h3>Лот 1: Dima on Grove Street</h3>
+            <div class="sold-image">
+                <img src="assets/images/paintings/dima_on_grove_street.jpg" alt="Dima on Grove Street">
+                <div class="sold-text" style="display: none;">Продано</div>
+            </div>
+            <p><strong>Автор:</strong> Dima Matushenko</p>
+            <p><strong>Описание:</strong> Автопортрет в гта </p>
+            <p><strong>Начальная цена:</strong> 100$</p>
+
+            <div class="input-row">
+                <label>Ваше имя: <input type="text" class="name-input" placeholder="Ваше имя"></label>
+                <label>Ваша ставка: <input type="number" class="bid-input" placeholder="Ставка"></label>
+            </div>
+            <div>
+                <button class="start-auction-btn">Устроить торг</button>
+                <button class="stop-auction-btn">Остановить торги</button>
+            </div>
+            <div class="bid-info"></div>
+        </article>
+
+
+
+        <!-- Лот 2 -->
+        <article class="auction-item" style="flex: 1 1 calc(33.33% - 40px); max-width: 300px; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h3>Лот 2: Dollars Bikini Bottom</h3>
+            <div class="sold-image">
+                <img src="assets/images/paintings/dollars_bikini_botam.jpg" alt="Dollars Bikini Bottom">
+                <div class="sold-text" style="display: none;">Продано</div>
+            </div>
+            <p><strong>Автор:</strong> Dima Matushenko </p>
+            <p><strong>Описание:</strong> Волюта из бикини ботам</p>
+            <p><strong>Начальная цена:</strong> 200$</p>
+
+            <div class="input-row">
+                <label>Ваше имя: <input type="text" class="name-input" placeholder="Ваше имя"></label>
+                <label>Ваша ставка: <input type="number" class="bid-input" placeholder="Ставка"></label>
+            </div>
+            <div>
+                <button class="start-auction-btn">Устроить торг</button>
+                <button class="stop-auction-btn">Остановить торги</button>
+            </div>
+            <div class="bid-info"></div>
+        </article>
+
+        <!-- Лот 3 -->
+        <article class="auction-item" style="flex: 1 1 calc(33.33% - 40px); max-width: 300px; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h3>Лот 3: Sharp Roses</h3>
+            <div class="sold-image">
+                <img src="assets/images/paintings/sharp_roses.jpg" alt="Sharp Roses">
+                <div class="sold-text" style="display: none;">Продано</div>
+            </div>
+            <p><strong>Автор:</strong> Dima Matushenko</p>
+            <p><strong>Описание:</strong> Острые розы</p>
+            <p><strong>Начальная цена:</strong> 150$</p>
+
+            <div class="input-row">
+                <label>Ваше имя: <input type="text" class="name-input" placeholder="Ваше имя"></label>
+                <label>Ваша ставка: <input type="number" class="bid-input" placeholder="Ставка"></label>
+            </div>
+            <div>
+                <button class="start-auction-btn">Устроить торг</button>
+                <button class="stop-auction-btn">Остановить торги</button>
+            </div>
+            <div class="bid-info"></div>
+        </article>
+
+        <!-- Лот 4 -->
+        <article class="auction-item" style="flex: 1 1 calc(33.33% - 40px); max-width: 300px; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h3>Лот 4: South Park</h3>
+            <div class="sold-image">
+                <img src="assets/images/paintings/south_park.jpg" alt="South Park">
+                <div class="sold-text" style="display: none;">Продано</div>
+            </div>
+            <p><strong>Автор:</strong> Dima Matushenko</p>
+            <p><strong>Описание:</strong> Сцена из South Park</p>
+            <p><strong>Начальная цена:</strong> 250$</p>
+
+            <div class="input-row">
+                <label>Ваше имя: <input type="text" class="name-input" placeholder="Ваше имя"></label>
+                <label>Ваша ставка: <input type="number" class="bid-input" placeholder="Ставка"></label>
+            </div>
+            <div>
+                <button class="start-auction-btn">Устроить торг</button>
+                <button class="stop-auction-btn">Остановить торги</button>
+            </div>
+            <div class="bid-info"></div>
+        </article>
+
+        <!-- Лот 5 -->
+        <article class="auction-item" style="flex: 1 1 calc(33.33% - 40px); max-width: 300px; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h3>Лот 5: The Soprano Italy</h3>
+            <div class="sold-image">
+                <img src="assets/images/paintings/the_soprano_italy.jpg" alt="The Soprano Italy">
+                <div class="sold-text" style="display: none;">Продано</div>
+            </div>
+            <p><strong>Автор:</strong> Dima Matushenko</p>
+            <p><strong>Описание:</strong> Сопрано прилетел в Италию</p>
+            <p><strong>Начальная цена:</strong> 300$</p>
+
+            <div class="input-row">
+                <label>Ваше имя: <input type="text" class="name-input" placeholder="Ваше имя"></label>
+                <label>Ваша ставка: <input type="number" class="bid-input" placeholder="Ставка"></label>
+            </div>
+            <div>
+                <button class="start-auction-btn">Устроить торг</button>
+                <button class="stop-auction-btn">Остановить торги</button>
+            </div>
+            <div class="bid-info"></div>
+        </article>
+
+        <!-- Лот 6 -->
+        <article class="auction-item" style="flex: 1 1 calc(33.33% - 40px); max-width: 300px; text-align: center; border: 1px solid #ddd; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h3>Лот 6: This House Is on Fire</h3>
+            <div class="sold-image">
+                <img src="assets/images/paintings/this_house_is_on_fire.jpg" alt="This House Is on Fire">
+                <div class="sold-text" style="display: none;">Продано</div>
+            </div>
+            <p><strong>Автор:</strong> Dima Matushenko</p>
+            <p><strong>Описание:</strong> Сгорел сарай гори и хата</p>
+            <p><strong>Начальная цена:</strong> 180$</p>
+
+            <div class="input-row">
+                <label>Ваше имя: <input type="text" class="name-input" placeholder="Ваше имя"></label>
+                <label>Ваша ставка: <input type="number" class="bid-input" placeholder="Ставка"></label>
+            </div>
+            <div>
+                <button class="start-auction-btn">Устроить торг</button>
+                <button class="stop-auction-btn">Остановить торги</button>
+            </div>
+            <div class="bid-info"></div>
+        </article>
+    </section>
+</main>
+<script>
+    // Функция для обработки нажатия кнопки "Устроить торг"
+    document.querySelectorAll('.start-auction-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const article = this.closest('.auction-item');  // Находим ближайший родительский элемент лота
+            const name = article.querySelector('.name-input').value;  // Получаем имя
+            const bid = article.querySelector('.bid-input').value;  // Получаем ставку
+
+            if (name && bid) {
+                const bidInfo = article.querySelector('.bid-info');
+                const bidEntry = document.createElement('div');
+                bidEntry.classList.add('bid-entry');
+                bidEntry.innerHTML = `<span><strong>Имя:</strong> ${name}</span> <span><strong>Ставка:</strong> ${bid}$</span>`;
+                bidInfo.appendChild(bidEntry);  // Добавляем новый элемент с информацией о ставке
+            } else {
+                alert('Пожалуйста, заполните имя и ставку!');
+            }
+        });
+    });
+
+    // Функция для обработки нажатия кнопки "Остановить торги"
+    document.querySelectorAll('.stop-auction-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const article = this.closest('.auction-item');  // Находим ближайший родительский элемент лота
+            const bidInfo = article.querySelector('.bid-info');
+
+            // Получаем все ставки для данного лота
+            const bids = Array.from(bidInfo.querySelectorAll('.bid-entry'));
+
+            if (bids.length === 0) {
+                alert('Нет ставок для этого лота!');
+                return;
+            }
+
+            // Находим максимальную ставку
+            let highestBid = 0;
+            let winnerName = '';
+
+            bids.forEach(bid => {
+                const bidAmount = parseFloat(bid.querySelector('span:last-child').textContent.replace('Ставка: ', '').replace('$', ''));
+                if (bidAmount > highestBid) {
+                    highestBid = bidAmount;
+                    winnerName = bid.querySelector('span:first-child').textContent.replace('Имя: ', '');
+                }
+            });
+
+            if (winnerName) {
+                // Обновляем изображение и выводим информацию о победителе
+                const image = article.querySelector('img');
+                const soldText = article.querySelector('.sold-text');
+                image.src = image.src.replace('.jpg', '_sold.jpg');  // Меняем картинку на проданную
+                soldText.style.display = 'block';  // Показываем текст "Продано"
+
+                // Добавляем информацию о победителе
+                const winnerEntry = document.createElement('div');
+                winnerEntry.classList.add('bid-entry');
+                winnerEntry.innerHTML = `<span><strong>Победитель:</strong> ${winnerName}</span> <span><strong>Ставка:</strong> ${highestBid}$</span>`;
+                bidInfo.appendChild(winnerEntry);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

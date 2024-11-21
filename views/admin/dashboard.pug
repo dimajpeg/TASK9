@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title= title
+    body
+        h1 Админ-панель
+        h2 Список участников
+        ul
+            each participant in participants
+                li= participant.name + ' - Баланс: ' + participant.balance
+
+        h2 Список картин
+        ul
+            each painting in paintings
+                li
+                    | #{painting.title} - Текущая цена: #{painting.currentBid}

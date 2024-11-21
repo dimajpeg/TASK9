@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title Аукцион
+        link(rel="stylesheet", href="/css/styles.css")
+        // layout.pug или auction.pug
+        head
+            link(rel="stylesheet", href="/styles.css")
+
+    body
+        header
+            h1 Аукцион
+            h2 Добро пожаловать на аукцион
+        .gallery
+            each painting, index in paintings
+                .gallery-item
+                    h3 Лот #{index + 1}: #{painting.title}
+                    img(src=painting.image, alt=painting.title)
+                    p Цена: #{painting.price} руб.
+                    button Подробнее
+        script(src="/js/app.js")

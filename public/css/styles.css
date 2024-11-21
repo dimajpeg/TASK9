@@ -1,0 +1,91 @@
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Светлый фон для страницы */
+    color: #333; /* Основной цвет текста */
+}
+
+/* Стили для header */
+header {
+    background-color: #007BFF; /* Синий фон */
+    color: #fff; /* Белый текст */
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Вертикальное размещение */
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center; /* Центрирование по горизонтали */
+    height: 150px; /* Высота хедера */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px; /* Размер заголовка */
+}
+
+header h2 {
+    margin: 10px 0;
+    font-size: 18px; /* Размер подзаголовка */
+}
+
+/* Галерея с картинами */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Чтобы переносилось на новую строку, если не вмещается */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 20px; /* Расстояние между элементами */
+    padding: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.33% - 40px); /* Три элемента в строке */
+    max-width: 300px;
+    text-align: center; /* Центрирование текста */
+    border: 1px solid #ddd; /* Рамка вокруг */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.gallery-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Кнопки для галереи */
+.gallery-item button {
+    background-color: #28a745; /* Зелёный фон кнопки */
+    color: white; /* Белый текст */
+    border: none; /* Без рамок */
+    padding: 5px 10px;
+    cursor: pointer; /* Указатель при наведении */
+    margin-top: 10px;
+    border-radius: 3px; /* Скруглённые углы */
+}
+
+.gallery-item button:hover {
+    background-color: #218838; /* Более тёмный зелёный при наведении */
+}
+
+/* Стили для блока .paintings (если используется) */
+.paintings {
+    display: flex; /* Flexbox */
+    justify-content: center; /* Центрирование по горизонтали */
+    flex-wrap: wrap; /* Обёртка строк */
+    gap: 20px; /* Расстояние между элементами */
+    padding: 20px;
+}
+
+/* Индивидуальные элементы внутри .paintings */
+.painting {
+    width: 200px; /* Фиксированная ширина */
+    text-align: center; /* Текст по центру */
+}
+
+.painting img {
+    width: 100%; /* Заполнение блока */
+    height: auto; /* Сохраняем пропорции */
+}
